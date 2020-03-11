@@ -1,6 +1,6 @@
 # Graduation-Project
 <Quản lý trang thiết bị y tế>
-Công việc: 
+Công việc: https://github.com/HauTrann/Graduation-Project/tree/master/ProjectDocuments
 * Mục đich làm ra phần mềm : quản lý các trang thiết bị y tế của bệnh viện, 
                             phòng khám được minh bạch, hiệu quả, an toàn và tránh những thiếu xót xảy ra khi sử dụng các thiết bị y tế.
 * Tìm hiểu phân tích nghiệp vụ của việc quản lý trang thiết bị y tế
