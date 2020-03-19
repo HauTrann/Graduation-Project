@@ -1,0 +1,17 @@
+.custom {
+  padding-top: 61px;
+}
+
+.panel-body {
+  margin-top: 55px;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .panel-body {
+    margin-top: 55px;
+    margin-left: 250px;
+    padding: 10px;
+  }
+}

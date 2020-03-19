@@ -1,12 +1,12 @@
-<nav class="navbar navbar-dark navbar-expand-md bg-dark">
-    <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
-        <span class="logo-img"></span>
-        <span jhiTranslate="global.title" class="navbar-title">MedicalEquipmentManager</span> <span class="navbar-version">{{ version }}</span>
+<nav class="navbar navbar-dark navbar-expand-md bg-dark custom">
+    <a class="navbar-brand logo pad-lef-20" routerLink="/" (click)="collapseNavbar()">
+        <span class="logo-img"></span> <!--jhiTranslate="global.title"-->
+        <span class="navbar-title"><!--MedicalEquipmentManager--></span> <span class="navbar-version">{{ version }}</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
     </a>
-    <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
+    <div class="navbar-collapse collapse custom-dropdown-toggle" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
