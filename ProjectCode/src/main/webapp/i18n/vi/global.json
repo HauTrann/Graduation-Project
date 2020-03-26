@@ -10,6 +10,9 @@
         "department": "Phòng ban",
         "departmentEmployee": "Department Employee",
         "equipmentType": "Equipment Type",
+        "equipment": "Equipment",
+        "medicalSuppliesType": "Medical Supplies Type",
+        "medicalSupplies": "Medical Supplies",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

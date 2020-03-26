@@ -21,7 +21,7 @@
 #sidebar-wrapper {
   position: fixed;
   left: 250px;
-  z-index: 1000;
+  z-index: 9999;
   overflow-y: auto;
   margin-left: -250px;
   width: 0;
@@ -134,4 +134,18 @@
   cursor: default;
   text-decoration: none;
   color: black;
+}
+
+.logo-img {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+  background-size: contain;
+}
+
+.hide-sidebar {
+  left: 0px !important;
+  transition: all 0.5s;
 }

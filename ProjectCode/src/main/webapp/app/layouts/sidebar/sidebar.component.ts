@@ -6,6 +6,7 @@ import { JhiEventManager, JhiLanguageService } from 'ng-jhipster';
 import { VERSION } from 'app/app.constants';
 import { LoginService } from 'app/core/login/login.service';
 import { LoginModalService } from 'app/core/login/login-modal.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'jhi-sidebar',
@@ -19,6 +20,8 @@ export class SidebarComponent implements OnInit {
   modalRef?: NgbModalRef;
   version: string;
   account: any;
+  showSb?: boolean = true;
+  eventSubscriberChangeSession?: Subscription;
 
   constructor(
     private loginService: LoginService,
@@ -32,7 +35,9 @@ export class SidebarComponent implements OnInit {
     this.isNavbarCollapsed = true;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.registerShowSidebar();
+  }
 
   changeLanguage(languageKey: string): void {
     this.languageService.changeLanguage(languageKey);
@@ -50,5 +55,11 @@ export class SidebarComponent implements OnInit {
 
   toggleNavbar(): void {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
+
+  registerShowSidebar(): void {
+    this.eventSubscriberChangeSession = this.eventManager.subscribe('toggleNavbar', (response: { content: boolean | undefined }) => {
+      this.showSb = response.content;
+    });
   }
 }

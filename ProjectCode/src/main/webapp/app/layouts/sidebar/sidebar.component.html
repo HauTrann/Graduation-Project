@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div id="sidebar-wrapper">
+<div id="sidebar-wrapper" [class.hide-sidebar] = "!showSb">
     <ul class="sidebar-nav">
         <li *jhiHasAnyAuthority="'ROLE_ADMIN'" class="sidebar-brand">
             <!--<a href="#" class="navbar-brand">
@@ -30,13 +30,19 @@
             <a routerLink="equipment-type"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Loại thiết bị</a>
         </li>
         <li>
-            <a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Thiết bị</a>
+            <a routerLink="equipment"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Thiết bị</a>
         </li>
         <li>
-            <a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Loại vật tư</a>
+            <a routerLink="medical-supplies-type"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Loại vật tư</a>
         </li>
         <li>
-            <a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Vật tư</a>
+            <a routerLink="medical-supplies"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Vật tư</a>
+        </li>
+        <li>
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span><font color="#337AB7"> BÁO CÁO</font>
+        </li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Báo cáo</a>
         </li>
     </ul>
 </div>

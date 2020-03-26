@@ -16,6 +16,19 @@ import { RouterModule } from '@angular/router';
       {
         path: 'equipment-type',
         loadChildren: () => import('./equipment-type/equipment-type.module').then(m => m.MedicalEquipmentManagerEquipmentTypeModule)
+      },
+      {
+        path: 'equipment',
+        loadChildren: () => import('./equipment/equipment.module').then(m => m.MedicalEquipmentManagerEquipmentModule)
+      },
+      {
+        path: 'medical-supplies-type',
+        loadChildren: () =>
+          import('./medical-supplies-type/medical-supplies-type.module').then(m => m.MedicalEquipmentManagerMedicalSuppliesTypeModule)
+      },
+      {
+        path: 'medical-supplies',
+        loadChildren: () => import('./medical-supplies/medical-supplies.module').then(m => m.MedicalEquipmentManagerMedicalSuppliesModule)
       }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ])
