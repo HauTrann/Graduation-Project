@@ -8,6 +8,8 @@
       "entities": {
         "main": "Entities",
         "department": "Department",
+        "departmentEmployee": "Department Employee",
+        "equipmentType": "Equipment Type",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

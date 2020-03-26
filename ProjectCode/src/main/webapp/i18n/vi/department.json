@@ -2,23 +2,23 @@
   "medicalEquipmentManagerApp": {
     "department": {
       "home": {
-        "title": "Departments",
-        "createLabel": "Thêm mới một Department",
-        "createOrEditLabel": "Thêm mới hoặc cập nhật Department",
+        "title": "Phòng ban",
+        "createLabel": "Thêm mới một phòng ban",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật phòng ban",
         "notFound": "No Departments found"
       },
       "created": "Một Department mới được tạo với định danh {{ param }}",
       "updated": "Một Department cập nhật với định danh {{ param }}",
       "deleted": "Một Department đã xóa với định danh {{ param }}",
       "delete": {
-        "question": "Bạn có chắc là muốn xóa Department {{ id }}?"
+        "question": "Bạn có chắc là muốn xóa phòng ban {{ id }}?"
       },
       "detail": {
         "title": "Department"
       },
-      "name": "Name",
-      "description": "Description",
-      "status": "Status"
+      "name": "Tên phòng ban",
+      "description": "Mô tả",
+      "status": "Trạng thái"
     }
   }
 }

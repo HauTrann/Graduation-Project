@@ -4,8 +4,8 @@
 </div>
 
 <div>
-    <router-outlet name="sidebar"></router-outlet>
-    <div class="panel-body">
+    <router-outlet *ngIf="showSideBar" name="sidebar"></router-outlet>
+    <div class="panel-body" [class.panel-body-1] = "!showSideBar">
         <router-outlet></router-outlet>
     </div>
     <jhi-footer></jhi-footer>
